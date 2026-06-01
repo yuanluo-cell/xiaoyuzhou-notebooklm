@@ -29,7 +29,7 @@ Mac 小宇宙一键导出 → 自动进 [NotebookLM](https://notebooklm.google.c
 ## 快速开始
 
 ```bash
-git clone https://github.com/YOUR_USER/xiaoyuzhou-notebooklm.git
+git clone https://github.com/yuanluo-cell/xiaoyuzhou-notebooklm.git
 cd xiaoyuzhou-notebooklm
 
 python3 -m venv .venv && source .venv/bin/activate
