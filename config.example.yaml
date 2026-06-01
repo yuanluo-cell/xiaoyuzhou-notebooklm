@@ -1,0 +1,30 @@
+# 复制为 config.yaml 后修改
+
+since_date: "2026-04-09"   # 只处理此日期及之后的收听记录
+
+paths:
+  episodes_csv: "episodes.csv"
+  audio_dir: "data/audio"
+  mp4_dir: "data/mp4"
+  covers_dir: "data/covers"
+  logs_dir: "logs"
+
+download:
+  # 单集页面公开信息，无需登录；部分节目可能需要 cookie
+  timeout_sec: 60
+  retry: 2
+
+mp4:
+  # 无封面时用纯色底图
+  fallback_color: "0x1a1a2e"
+  # 视频编码，NotebookLM 接受常见格式
+  video_codec: "libx264"
+  audio_codec: "aac"
+
+notebooklm:
+  enabled: true
+  auto_upload: true
+  cli_bin: "~/.local/bin/notebooklm"   # 勿用 venv 内的 notebooklm
+  notebook_title: "小宇宙播客 2026-04-09 起"
+  notebook_id: null
+  prefer_mp4: true

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+config.yaml
+data/audio/*
+data/mp4/*
+data/covers/*
+!data/audio/.gitkeep
+!data/mp4/.gitkeep
+!data/covers/.gitkeep
+logs/*
+!logs/.gitkeep
+logs/notebooklm_uploaded.json
+logs/notebooklm_context.json
+.DS_Store
